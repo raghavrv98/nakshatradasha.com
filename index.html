@@ -75,6 +75,100 @@
 				}
 			}
 		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.whatsapp-button {
+			position: fixed;
+			bottom: 20px;
+			/* Adjust as needed */
+			right: 20px;
+			/* Adjust as needed */
+			width: 55px;
+			/* Size of the button */
+			height: 60px;
+			/* Size of the button */
+			/* WhatsApp green */
+			border-radius: 50%;
+			/* Circular button */
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			/* Shadow effect */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+			/* Ensures it's above other elements */
+		}
+
+		.whatsapp-button img {
+			width: 55px;
+			/* Size of the WhatsApp icon */
+			height: 60px;
+			border-radius: 50%;
+			/* Size of the WhatsApp icon */
+		}
+
+		.online-dot {
+			position: absolute;
+			bottom: 0;
+			/* Position at the bottom of the image */
+			right: 0;
+			/* Position at the right of the image */
+			width: 15px;
+			/* Size of the dot */
+			height: 15px;
+			/* Size of the dot */
+			background-color: #25D366;
+			/* Green color */
+			border-radius: 50%;
+			/* Circular dot */
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			/* Shadow for the dot */
+		}
+
+		.chatBotText {
+			display: block;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px !important;
+			line-height: 24px !important;
+			font-weight: 400;
+			position: absolute;
+			z-index: 2147482999;
+			cursor: pointer;
+			background-color: #fff;
+			color: #666;
+			padding: 7px 10px;
+			border-radius: 0.625rem !important;
+			white-space: normal;
+			text-overflow: ellipsis;
+			max-width: 300px;
+			margin: 0px 15px;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+			animation: launcher-frame-appear 0.25s ease forwards;
+			right: 45px;
+			width: 90px;
+			top: 20px;
+		}
+
+		.tooltip-arrow {
+			position: absolute;
+			/* top: 100%; */
+			/* left: 50%; */
+			margin-left: -5px;
+			width: 10px;
+			height: 10px;
+			border-left: 5px solid #ffffff;
+			border-right: 5px solid transparent;
+			border-top: 5px solid transparent;
+			/* background-color: white; */
+			border-bottom: 5px solid transparent;
+			right: -10%;
+			bottom: 20%;
+		}
 	</style>
 </head>
 
@@ -700,6 +794,13 @@
 		<!-- our contact -->
 
 	</div>
+	<div class="whatsapp-button">
+		<a href="https://wa.me/918630422423" target="_blank">
+			<img src="./images/astrologer.jpg" alt="WhatsApp Chat" />
+			<div class="online-dot"></div>
+			<div class="chatBotText">Chat now<span class="tooltip-arrow"></span></div>
+		</a>
+	</div>
 	<script defer type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
 	<script defer type="text/javascript" src="js/jquery.easing.min.js"></script>
 	<script defer type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
@@ -710,8 +811,8 @@
 	<script defer type="text/javascript" src="js/jquery.superlightbox.min.js"></script>
 	<script defer type="text/javascript" src="js/wow.min.js"></script>
 	<script defer type="text/javascript" src="js/all.js"></script>
-	<script
-		async>(function (w, d) { w.CollectId = "5f25561adf7e9e71498e7847"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+	<!-- <script
+		async>(function (w, d) { w.CollectId = "5f25561adf7e9e71498e7847"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script> -->
 </body>
 
 </html>
